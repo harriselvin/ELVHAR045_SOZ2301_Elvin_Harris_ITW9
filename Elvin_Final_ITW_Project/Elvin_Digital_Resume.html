@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elvin Harris Digital Resumé</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header" id="header" style=background:url(Images/img29.jpg);>
+            <div class="container">
+                <nav>
+                    <h1>Elvin <span>Harris</span></h1>
+                    <ul>
+                        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- IMAGES -->
+            <picture>
+                <source srcset="/Images/Elvin-face.jpg" media="(max-width:500px)">
+                <source srcset="/Images/Elvin-shoulders.jpg" media="(max-width:1000px)">
+                <div style="text-align: center"><img src="./Images/Elvin-body.jpg" alt="Profile Picture"></div>
+            </picture>
+            <h2><span>Hi, I'm Elvin </span><br> Web Developer</h2>
+            <h3>An Introductory Personal Statement</h3>
+        </header>
+        <!-- MAIN SECTION -->
+        <main>
+            <section id="about">
+                <!-- EDUCATION -->
+                <h2>Education</h2>
+                <article id="education">
+                    <h3>Intro to Web at <a href="https://www.codespace.co.za/"
+                            target="_blank">CodeSpace Academy</a></h3>
+                    <p><span>2023</span><br> My Intro to Web Course at CodeSpace
+                        is currently still in role.</p>
+                    <h3>Matriculated at Lavender Hill High School</h3>
+                    <p><span>2017</span><br> Matriculated with Bachelors Pass.</p>
+                    <ul>
+                        <li>Afrikaans</li>
+                        <li>English</li>
+                        <li>Mathematical Literacy</li>
+                        <li>Life Orientation</li>
+                        <li>Tourism</li>
+                        <li>Life Science</li>
+                        <li>Computer Applications Technology</li>
+                    </ul>
+                </article>
+                <!-- EXPERIENCE -->
+                <article id="experience">
+                    <h2>Experience</h2>
+                    <p><span>New World Foundation</span> | 2018 - 2021 <br>Volunteer</p>
+                    <ul>
+                        <li>Data Capturing</li>
+                        <li>Facilitated programs with children</li>
+                        <li>Administration</li>
+                    </ul>
+                    <p><span>Levana Primary School</span> | 2021 - 2022 <br>Teachers
+                        Assistant</p>
+                    <ul>
+                        <li>Administered computer lab</li>
+                        <li>Facilitated classes on my own</li>
+                        <li>Administration</li>
+                    </ul>
+                </article>
+                <!-- SKILLS -->
+                <article id="skills">
+                    <h2>Skills</h2>
+                    <div class="skill">
+                        <p>HTML</p>
+                        <div class="skill-bar skill1">
+                            <span class="skill-count1">90%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>CSS</p>
+                        <div class="skill-bar skill2">
+                            <span class="skill-count2">80%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>JavaScript</p>
+                        <div class="skill-bar skill3">
+                            <span class="skill-count3">50%</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <aside>
+                <!-- NAVIGATION -->
+                <div class="navigation">
+                    <h3>Quick Navigation</h3>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+        <!-- FOOTER -->
+        <footer id="contact">
+            <div class="contact-details icons">
+            <h2>Contact Details</h2>
+                <ul>
+                    <li class="linkedin"><a href="https://www.linkedin.com/" target="_blank"><img src="https://img.icons8.com/fluency/48/null/linkedin-circled.png" alt="linkedin"></a></li>
+                    <li><a href="https://github.com/" target="_blank"><img src="https://img.icons8.com/ios-glyphs/50/null/github.png" alt="github"></a></li>
+                    <li><a href="https://mail.google.com/" target="_blank"><img src="https://img.icons8.com/color/48/null/gmail--v1.png" alt="gmail"></a></li>
+                </ul>
+                <details>
+                    <summary>My Contact Details</summary>
+                    <h4>Gmail</h4>
+                    <p>harriselvin6@gmail.com</p>
+                    <h4>Contact Number</h4>
+                    <p>062 535 5271</p>
+                </details>
+            </div>
+            <form action="https://formsubmit.co/harriselvin6@gmail.com" method="POST">
+                <h2>Contact Me</h2>
+                <label for="name">Name: </label>
+                <input type="text" id="name" placeholder="Name" required>
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="textarea">Message: </label>
+                <textarea name="message" id="textarea" cols="30" rows="10" placeholder="Type your message here ..."></textarea>
+                <input type="submit" id="btn" value="Submit">
+            </form>
+        </footer>
+    </body>
+</html>

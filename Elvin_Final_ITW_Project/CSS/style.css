@@ -1,0 +1,666 @@
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    min-height: 200vh;
+}
+ul li{
+    list-style-type: circle;
+}
+/* HEADER */
+.header{
+    max-width: 100%;
+    max-height: 100%;
+    width: 99vw;
+    height: 100vh;
+    padding: 0 1rem;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+.header nav{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: -10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+    inset 0 0 1px rgba(255, 255, 255, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.header nav h1{
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.header nav h1 span{
+    color: blue;
+}
+.header nav ul li{
+list-style-type: none;
+color: black;
+display: inline;
+padding: 10px;
+}
+.header .container a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+.header .container a:hover{
+    color: blue;
+}
+
+@keyframes imageAnimate {
+    0%  {box-shadow: 1px 1px 5px black;}
+    50% {box-shadow: 1px 1px 10px black;}
+    75% {box-shadow: 1px 1px 20px black;}
+    100%{box-shadow: 1px 1px 30px black;}
+}
+.header img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    border: 1px dashed white;
+    margin-top: 20px;
+}
+.header img:hover{
+    animation-name: imageAnimate;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.header h2{
+    display: grid;
+    grid-template-rows: 50px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px blue;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.header h2 span{
+    text-align: center;
+    display: grid;
+    font-size: 50px;
+    color: white;
+}
+.header h3{
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px blue;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+header {
+    display: grid;
+    grid-template-columns: repeat(2fr 1fr);
+}
+/* NAVIGATION */
+aside{
+    background-color: rgba(226, 215, 215, 0.534);
+    padding: 50px;
+    margin-right: -10px;
+}
+aside .navigation{
+    position: sticky;
+    top: 0;
+}
+aside ul li{
+    list-style: none;
+}
+aside ul li a{
+    text-decoration: none;
+    color: black;
+}
+aside ul li a:hover{
+    border-radius: 10px;
+    padding: 2px;
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.795);
+    color: whitesmoke;   
+}
+/* MAIN SECTION */
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+    margin-left: 200px;
+    font-size: 18px;
+}
+/* EDUCATION */
+main #education{
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+main #education a{
+    text-decoration: none;
+    color: green;
+}
+main #education  p span{
+    color: red;
+}
+/* EXPERIENCE */
+main #experience{
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+main #experience p span{
+    color: blue;
+}
+/* SKILLS */
+main #skills{
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+main #skills .skill{
+    margin-bottom: 35px;
+    position: relative;
+    overflow: hidden;
+}
+main #skills .skill > p{
+    font-weight: 700;
+    margin: 0;
+}
+main #skills .skill:before{
+    width: 90%;
+    height: 10px;
+    content: '';
+    display: block;
+    position: absolute;
+    background: #959595;
+    bottom: 0;
+}
+main #skills .skill-bar{
+    width: 70%;
+    height: 10px;
+    background: #f4392f;
+    display: block;
+    position: relative;
+}
+main #skills .skill-bar span{
+    position: absolute;
+    border-top: 5px solid #f4392f;
+    top: -30px;
+    padding: 0;
+    font-size: 18px;
+    padding: 3px 0;
+    font-weight: 500;
+}
+main #skills .skill-bar{
+    position: relative;
+}
+main #skills .skill1{
+    width: 80%;
+}
+main #skills .skill-count1{
+    right: 0;
+}
+main #skills .slill2{
+    width: 80%;
+}
+main #skills .skill-count2{
+    right: 0;
+}
+main #skills .skill3{
+    width: 45%;
+}
+main #skills .skill-count3{
+    right: 0;
+}
+/* FOOTER */
+#contact{
+    height: 95vh;
+    width: 90vw;
+    padding: 10px 10px 20px 200px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #72D2CF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#contact h2{
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#contact .contact-details ul li{
+    display: inline-flex;
+    list-style: none;
+}
+#contact .contact-details ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    margin: 5px;
+}
+/* FORM */
+#contact form{
+    display: grid;
+    justify-content: center;
+    height: 650px;
+}
+#contact form h2{
+    margin-bottom: -50px;
+}
+#contact form input{
+    border-radius: 10px;
+}
+#contact form textarea{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#contact form input[type=submit]{
+    background-color: #BD0060;
+    opacity: 0.9;
+    color: #fff;
+    cursor: pointer;
+}
+#contact form input[type=submit]:hover{
+    background-color: #BD0060;
+    opacity: 1;
+    color: #fff;
+}
+#contact form input[type=submit]:active{
+    background-color: #7C8BC0;
+    color: #fff;
+}
+
+/* RESPONSIVE DESIGN */
+/* TABLET */
+@media screen and (max-width: 800px) {
+    body{
+        min-height: 200vh;
+    }
+
+    /* HEADER */
+    .header{
+        max-width: 100%;
+        width: 100vw;
+        height: 105vh;
+        font-size: smaller;
+    }
+
+    .header nav{
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .header h1{
+        font-size: 25px;
+    }
+    
+    .header nav ul li{
+        padding: 10px;
+    }
+
+    .header img{
+        height: 150px;
+        width: 150px;
+        border-radius: 75px;
+        border: 1px dashed white;
+    }
+
+    .header h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .header h2 span{
+        font-size: 30px;
+        color: white;
+    }
+
+    .header h3{
+        font-size: 17px;
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: repeat(1fr 1fr);
+    }
+
+    /* NAVIGATION */
+    aside{
+        padding: 20px;
+        margin-right: -28px;
+    }
+
+    aside ul li{
+        list-style: none;
+        list-style-position: outside;
+        margin-left: -20px;
+    }
+
+    aside ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    aside ul li a:hover{
+        border-radius: 10px;
+        padding: 2px;
+        margin-bottom: 5px;
+        background-color: rgba(0, 0, 0, 0.795);
+        color: white;   
+    }
+
+    /* MAIN SECTION */
+    main{
+        max-width: 100%;
+        margin-left: 100px;
+        padding-right: 5px;
+        font-size: 15px;
+    }
+
+    /* EDUCATION */
+    main #education{
+        padding-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    /* EXPERIENCE */
+    main #experience{
+        padding-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    /* SKILLS */
+    main #skills{
+        padding-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    main #skills .skill{
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    main #skills .skill > p{
+        font-weight: 700;
+        margin: 0;
+    }
+
+    main #skills .skill-bar span{
+        font-size: 13px;
+        padding: 5px 0;
+        font-weight: 600;
+    }
+
+    /* FOOTER */
+    #contact{
+        margin-left: -10px;
+        padding: 10px 10px 20px 0px;
+        font-size: 15px;
+        min-height: 120vh;
+        min-width: 101vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contact h2{
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    #contact .contact-details ul{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: -50px;
+    }
+    #contact .contact-details ul li{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    #contact .contact-details ul li a{
+        text-decoration: none;
+        color: #000;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    #contact details{
+        margin-left: 10px;
+        padding: 4px;
+        width: 200px;
+        cursor: pointer;
+    }
+
+    #contact details h4{
+        padding: 4px;
+        margin: 0;
+    }
+
+    /* FORM */
+    #contact form{
+        display: flexbox;
+        position: relative;
+        margin-top: 0px;
+        height: 500px;
+    }
+
+    #contact form h2{
+        margin-top: 20px;
+        margin-left: -2px;
+    }
+
+    #contact form input{
+        border-radius: 7px;
+    }
+
+    #contact form textarea{
+        border-radius: 7px;
+    }
+
+}
+
+/* MOBILE */
+@media screen and (max-width: 450px) {
+    body{
+        min-height: 215vh;
+    }
+
+    /* HEADER */
+    .header{
+        max-width: 99%;
+        width: 99vw;
+        height: 110vh;
+        font-size: smaller;
+    }
+
+    .header nav{
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    .header h1{
+        font-size: 20px;
+    }
+    
+    .header nav ul li{
+        display: inline;
+        padding: 5px;
+    }
+
+    .header img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        border: 1px dashed white;
+    }
+
+    .header h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .header h2 span{
+        text-align: center;
+        display: grid;
+        font-size: 30px;
+        color: white;
+    }
+
+    .header h3{
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: repeat(1fr 1fr);
+    }
+
+    /* NAVIGATION */
+    aside{
+        padding: 15px;
+        margin-right: -25px;
+    }
+
+    aside .navigation{
+        position: sticky;
+        top: 0;
+    }
+
+    aside ul li{
+        list-style: none;
+        list-style-position: outside;
+        margin-left: -40px;
+    }
+
+    aside ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    aside ul li a:hover{
+        border-radius: 10px;
+        padding: 2px;
+        margin-bottom: 5px;
+        background-color: rgba(0, 0, 0, 0.795);
+        color: white;   
+    }
+
+    /* MAIN SECTION */
+    main{
+        max-width: 100%;
+        margin-left: 0px;
+        padding-right: 5px;
+        font-size: 13px;
+    }
+
+    /* EDUCATION */
+    main #education{
+        padding-bottom: 20px;
+        padding-left: 0px;
+    }
+
+    /* EXPERIENCE */
+    main #experience{
+        padding-bottom: 20px;
+        padding-left: 0px;
+    }
+
+    main #experience ul li{
+        list-style-position: outside;
+    }
+
+    /* SKILLS */
+    main #skills{
+        padding-bottom: 20px;
+        padding-left: 0px;
+    }
+
+    main #skills .skill{
+        margin-bottom: 25px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    main #skills .skill > p{
+        font-weight: 500;
+        margin: 0;
+    }
+
+    main #skills .skill-bar span{
+        font-size: 10px;
+        padding: 10px 0;
+        font-weight: 500;
+    }
+
+    /* FOOTER */
+    #contact{
+        margin-left: -10px;
+        padding: 10px 10px 20px 0px;
+        font-size: 13px;
+        min-height: 160vh;
+        min-width: 101vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact h2{
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    #contact .contact-details ul{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: -50px;
+    }
+    #contact .contact-details ul li{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    #contact .contact-details ul li a{
+        text-decoration: none;
+        color: #000;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    #contact details{
+        margin-left: 10px;
+        padding: 10px;
+        width: 200px;
+        cursor: pointer;
+    }
+
+    #contact details h4{
+        padding: 10px;
+        margin: 0;
+    }
+
+    /* FORM */
+    #contact form{
+        display: flexbox;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    #contact form h2{
+        margin-top: -40px;
+    }
+
+    #contact form input{
+        border-radius: 7px;
+    }
+
+    #contact form textarea{
+        border-radius: 7px;
+    }
+
+}
